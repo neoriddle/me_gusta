@@ -4,7 +4,8 @@
 body{
 	padding:0px;
 	margin: 0px;
-    background: url(../images/Fondo.jpg)
+    background: url(../images/Fondo.jpg) repeat-x;
+    background-color: #f0f0f0;
 }
 #navbar{
 	background: url(../images/title_bg.png);
@@ -77,7 +78,8 @@ fieldset#shipping{
 }
 
 #titlemenu{
-	font:Verdana, Geneva, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
 	color: white;
 	text-align: right;
 	float: right;
@@ -85,9 +87,23 @@ fieldset#shipping{
 	position: relative;
 }
 
+#titlemenu li a{
+    color:#8398b3;
+    text-decoration: none;
+}
+
 #titlemenu li {
 	display: inline;
 	padding-left: 1em;
+}
+
+#titlemenu .cart{
+    color: white;
+    text-decoration: none;
+}
+
+#titlemenu .cart:hover{
+    text-decoration: underline;
 }
 
 .per1{
@@ -102,6 +118,7 @@ fieldset#shipping{
 	position: relative;
 	width: 350px;
 	left: 15%;
+    text-align: center;
 }
 .per2{
 	position: relative;
@@ -109,4 +126,18 @@ fieldset#shipping{
 	width: 280px;
 	right: 10%;
 	bottom: 1em;
+}
+
+#treecol ul{
+    width: 1000px;
+}
+
+#treecol li{
+    display: inline;
+}
+
+#treecol div{
+    position: relative;
+    width: 300px;
+    float: left;
 }
