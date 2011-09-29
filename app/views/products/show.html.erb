@@ -30,6 +30,19 @@
     <%= render 'properties' %>
   <% end %>
 
+
+  <div>
+    <a href="https://twitter.com/share"
+       class="twitter-share-button"
+       data-text="<%=@product.name %>"
+       data-count="horizontal"
+       data-via="neoriddle"
+       data-lang="<%= I18n.locale || 'es' %>">Tweet</a>
+
+    <script type="text/javascript"
+	    src="//platform.twitter.com/widgets.js"></script>
+  </div>
+
   <script type="text/javascript" 
 	  src="https://apis.google.com/js/plusone.js">
     {lang: 'es-419'}
