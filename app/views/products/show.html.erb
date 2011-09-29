@@ -29,4 +29,15 @@
   <%= hook :product_properties do %>
     <%= render 'properties' %>
   <% end %>
+
+  <script type="text/javascript" 
+	  src="https://apis.google.com/js/plusone.js">
+    {lang: 'es-419'}
+  </script>
+
+  <div class="g-plusone" 
+       data-annotation="inline" 
+       data-width="" 
+       data-href="<%= request.url %>"></div>
+
 </div>
