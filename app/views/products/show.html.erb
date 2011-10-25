@@ -30,42 +30,28 @@
     <%= render 'properties' %>
   <% end %>
 
-
-  <div>
+  <div id="social-buttons">
     <a href="https://twitter.com/share"
        class="twitter-share-button"
        data-text="<%=@product.name %>"
        data-count="horizontal"
-       data-via="neoriddle"
+       data-via="megustastoremx"
        data-lang="<%= I18n.locale || 'es' %>">Tweet</a>
-
     <script type="text/javascript"
 	    src="//platform.twitter.com/widgets.js"></script>
+
+    <script type="text/javascript" 
+	    src="https://apis.google.com/js/plusone.js">{lang: 'es-419'}</script>
+    <g:plusone size="medium" href="<%= request.url %>"></g:plusone>
+
+    <div class="fb-like" 
+	 data-send="false" 
+	 data-layout="button_count" 
+	 data-width="100" 
+	 data-show-faces="true"></div>
+
   </div>
 
-  <script type="text/javascript" 
-	  src="https://apis.google.com/js/plusone.js">
-    {lang: 'es-419'}
-  </script>
-
-  <div class="g-plusone" 
-       data-annotation="inline" 
-       data-width="" 
-       data-href="<%= request.url %>"></div>
-
-  <div id="fb-root"></div>
-  <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) {return;}
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/all.js#appId=153956711364289&xfbml=1";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script>
   
-  <div class="fb-like" 
-       data-send="true" 
-       data-layout="button_count" 
-       data-width="450" 
-       data-show-faces="true"></div>
 
 </div>
